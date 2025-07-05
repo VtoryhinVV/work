@@ -1,4 +1,4 @@
-import css from './Commission.module.css'
+import css from './commission.module.css'
 
 export default function Commission() {
 	return (
