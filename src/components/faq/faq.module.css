@@ -1,0 +1,16 @@
+.faq {
+	padding: 100px 0;
+	h2 {
+		font-size: 32px;
+		font-weight: 400;
+		color: white;
+		margin-bottom: 24px;
+	}
+}
+
+.faq__accordion {
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+	margin-bottom: 24px;
+}

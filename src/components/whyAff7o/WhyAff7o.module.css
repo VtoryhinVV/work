@@ -1,0 +1,17 @@
+.whyAff7o {
+	padding: 100px 0;
+	h2 {
+		font-size: 32px;
+		font-weight: 400;
+		text-align: center;
+		margin-bottom: 40px;
+		color: white;
+	}
+}
+
+.cards {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 24px;
+	justify-content: center;
+}
