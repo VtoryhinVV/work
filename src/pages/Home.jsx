@@ -1,10 +1,10 @@
 import { useEffect } from 'react'
 import { useLocation } from 'react-router-dom'
-import WhyAff7o from '../components/WhyAff7o/WhyAff7o'
 import AboutUs from '../components/aboutUs/AboutUs'
 import Commission from '../components/commission/commission'
+import FAQ from '../components/faq/faq'
 import Hero from '../components/hero/hero'
-import FAQ from '../components/faq/FAQ'
+import WhyAff7o from '../components/whyAff7o/whyAff7o'
 
 export default function Home() {
 	const location = useLocation()

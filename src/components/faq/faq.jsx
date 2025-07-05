@@ -1,6 +1,7 @@
 import Button from '../button/button'
 import css from './faq.module.css'
 import FaqAccordion from './faqAccordion/faqAccordion'
+
 export default function FAQ() {
 	const faqItems = [
 		{ name: 'Why choose Aff7o Affiliates?' },
