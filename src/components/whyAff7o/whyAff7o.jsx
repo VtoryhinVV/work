@@ -1,4 +1,4 @@
-import css from './WhyAff7o.module.css'
+import css from './whyAff7o.module.css'
 import WhyAff7oCard from './whyAff7oCard/whyAff7oCard'
 export default function WhyAff7o() {
 	const infoList = [
