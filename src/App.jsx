@@ -1,7 +1,7 @@
 import { Route, Routes } from 'react-router-dom'
-import Footer from './components/footer/Footer'
-import Header from './components/header/Header'
-import ScrollToTopButton from './components/ScrollUpBtn/ScrollToTopButton'
+import Footer from './components/footer/footer'
+import Header from './components/header/header'
+import ScrollToTopButton from './components/scrollUpBtn/scrollToTopButton'
 
 import Home from './pages/Home'
 import PrivacyPolicy from './pages/PrivacyPolicy'
