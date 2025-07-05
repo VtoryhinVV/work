@@ -1,6 +1,6 @@
 import { useEffect } from 'react'
 import { useLocation } from 'react-router-dom'
-import AboutUs from '../components/aboutUs/AboutUs'
+import AboutUs from '../components/aboutUs/aboutUs'
 import Commission from '../components/commission/commission'
 import FAQ from '../components/faq/faq'
 import Hero from '../components/hero/hero'
