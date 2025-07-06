@@ -2,7 +2,7 @@ import { ErrorMessage, Field, Form, Formik } from 'formik'
 import { useState } from 'react'
 import * as Yup from 'yup'
 import Icon from '../../../assets/play.svg?react'
-import css from './ConnectForm.module.css'
+import css from './connectForm.module.css'
 
 export default function ConnectForm() {
 	const [showPassword, setShowPassword] = useState(false)
