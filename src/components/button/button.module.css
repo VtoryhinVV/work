@@ -1,18 +1,19 @@
 .button {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	font-weight: 600;
+	max-width: fit-content;
 	padding: 16px 24px;
 	color: #6b2ea1;
-	border: 1px solid white;
 	background-color: white;
 	border-radius: 34px;
-	display: flex;
-	gap: 10px;
-	align-items: center;
 	cursor: pointer;
 	transition: all 250ms ease;
 	&:focus,
 	&:hover {
 		color: white;
-		background-color: #6b2ea1;
-		border-color: #ff2ea1;
+		background-color: #ef97e8;
+		box-shadow: 0 0 10px #ef97e8, 0 0 20px #ef97e8;
 	}
 }

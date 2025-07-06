@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import BurgerButton from '../burgerButton/burgerButton'
 import css from './header.module.css'
 
 export default function Header() {
@@ -25,7 +26,6 @@ export default function Header() {
 					<div className={css.header___mainBtn}>{navLinks}</div>
 					<div className={css.header___reg_nav}>
 						<a href='https://admin.aff7o.com/partner/login'>Log in</a>
-						<div></div>
 						<a
 							className={css.header___regBtn}
 							href='https://admin.aff7o.com/partner/register'
@@ -33,15 +33,15 @@ export default function Header() {
 							Become an Partner
 						</a>
 					</div>
-					{/* <BurgerButton>
+					<BurgerButton>
 						<div className={css.header___mainBtnMob}>{navLinks}</div>
-						<div>
+						<div className={css.header___regBtnMob}>
 							<a href='https://admin.aff7o.com/partner/login'>Log in</a>
 							<a href='https://admin.aff7o.com/partner/register'>
 								Become an Partner
 							</a>
 						</div>
-					</BurgerButton> */}
+					</BurgerButton>
 				</nav>
 			</div>
 		</header>

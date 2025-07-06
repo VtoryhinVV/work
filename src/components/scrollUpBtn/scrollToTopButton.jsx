@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import css from './scrollToTopButton.module.css'
 
 export default function ScrollToTopButton() {
 	const [visible, setVisible] = useState(false)
@@ -26,19 +27,8 @@ export default function ScrollToTopButton() {
 	if (!visible) return null
 
 	return (
-		<button
-			onClick={handleClick}
-			style={{
-				position: 'fixed',
-				bottom: '30px',
-				right: '30px',
-				padding: '10px 20px',
-				fontSize: '16px',
-				zIndex: 1000,
-				backgroundColor: '#007bff',
-			}}
-		>
-			Наверх
+		<button onClick={handleClick} className={css.buttonUp}>
+			↑
 		</button>
 	)
 }

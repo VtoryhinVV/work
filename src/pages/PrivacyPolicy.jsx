@@ -1,6 +1,10 @@
+import { useEffect } from 'react'
 import css from './PrivacyPolicy.module.css'
 
 export default function PrivacyPolicy() {
+	useEffect(() => {
+		window.scrollTo({ top: 0, behavior: 'smooth' })
+	}, [])
 	return (
 		<main>
 			<div className='container'>

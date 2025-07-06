@@ -2,7 +2,7 @@
 
 .container {
 	width: 100%;
-	padding: 0px 8px;
+	padding: 0px 12px;
 	margin-inline: auto;
 	box-sizing: border-box;
 	@media screen and (min-width: 768px) {
@@ -50,10 +50,7 @@ a {
 	color: inherit;
 }
 
-button,
-input,
-textarea,
-select {
+button {
 	font: inherit;
 	background: none;
 	border: none;

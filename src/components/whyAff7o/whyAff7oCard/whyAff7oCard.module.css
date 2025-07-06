@@ -7,24 +7,29 @@
 	max-width: 356px;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
 	background-image: url('/img/cardBg1.png'), url('/img/cardBg2.png');
 	background-repeat: no-repeat, no-repeat;
 	background-position: top left, top right;
-}
 
-.card h3 {
-	font-size: 22px;
-	font-weight: 500;
-	color: white;
-	position: relative;
-	z-index: 2;
-	margin-bottom: 16px;
-}
+	img {
+		margin-bottom: 8px;
+	}
 
-.card p {
-	position: relative;
-	z-index: 2;
+	h3 {
+		font-size: 22px;
+		font-weight: 500;
+		color: white;
+		position: relative;
+		z-index: 2;
+		margin-bottom: 16px;
+		min-height: 66px;
+		display: flex;
+		align-items: center;
+	}
+	p {
+		position: relative;
+		z-index: 2;
+	}
 }
 
 .card_background1 {

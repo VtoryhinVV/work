@@ -22,9 +22,7 @@ export default function Footer() {
 						<img src='/logo.svg' alt='Logo' width='94' height='65' />
 					</Link>
 					<div className={css.footer___mainBtn}>{navLinks}</div>
-					<div className={css.footer___copyright}>
-						<p>Copyright © 2025 | Aff7o Affiliates</p>
-					</div>
+					<p>Copyright © 2025 | Aff7o Affiliates</p>
 				</nav>
 			</div>
 		</footer>

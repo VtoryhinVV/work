@@ -9,7 +9,7 @@ export default function Commission() {
 					<li className={css.card}>
 						<h3>
 							Flexible terms - <br />
-							<span className={css.red}>your traffic</span>, your rules
+							<span className={css.accent}>your traffic</span>, your rules
 						</h3>
 						<p>
 							We don’t impose strict limits. Let’s agree on what works best for
@@ -19,15 +19,15 @@ export default function Commission() {
 					<li className={css.card}>
 						<h3>
 							RevShare
-							<br /> from <span className={css.red}>35%</span> to{' '}
-							<span className={css.red}>50%</span>
+							<br /> from <span className={css.accent}>35%</span> to{' '}
+							<span className={css.accent}>50%</span>
 						</h3>
 						<p>No negative carryover. Every month starts fresh.</p>
 					</li>
 					<li className={css.card}>
 						<h3>
 							Sub-Affiliate <br />
-							<span className={css.red}>5%+</span>
+							<span className={css.accent}>5%+</span>
 						</h3>
 						<p>
 							Earn from your referrals. Build your network and grow your

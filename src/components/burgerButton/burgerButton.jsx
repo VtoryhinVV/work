@@ -20,7 +20,10 @@ const BurgerButton = ({ children }) => {
 				<div className={styles.line}></div>
 			</button>
 			<div className={clsx({ [styles.open]: isOpen })}>
-				<div className={clsx(styles.menu, { [styles.open]: isOpen })}>
+				<div
+					className={clsx(styles.menu, { [styles.open]: isOpen })}
+					onClick={toggleMenu}
+				>
 					{children}
 				</div>
 			</div>

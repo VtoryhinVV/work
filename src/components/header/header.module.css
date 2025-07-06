@@ -7,7 +7,7 @@
 	justify-content: space-between;
 	align-items: center;
 	padding: 9px 0;
-
+	font-size: 14px;
 	@media screen and (min-width: 768px) {
 		justify-content: baseline;
 	}
@@ -21,9 +21,6 @@
 		gap: 16px;
 		align-items: center;
 		a {
-			text-decoration: none;
-			height: min-content;
-			font-size: 14px;
 			color: white;
 			transition: all 250ms linear;
 			&:hover,
@@ -51,19 +48,20 @@
 	height: min-content;
 	display: flex;
 	align-items: center;
+	margin-right: auto;
+	@media screen and (min-width: 1140px) {
+		margin-right: 0;
+	}
 }
 
 .header___mainBtn {
 	display: none;
 
-	@media screen and (min-width: 768px) {
+	@media screen and (min-width: 1140px) {
 		display: flex;
 		gap: 32px;
 		align-items: center;
 		a {
-			font-size: 14px;
-			text-decoration: none;
-			height: min-content;
 			color: white;
 			transition: color 250ms linear;
 			&:hover,
@@ -91,5 +89,24 @@
 		&:focus {
 			color: #6b2ea1;
 		}
+	}
+}
+
+.header___regBtnMob {
+	margin-top: 20px;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	align-items: center;
+	a {
+		color: white;
+		transition: all 250ms linear;
+		&:hover,
+		&:focus {
+			color: #6b2ea1;
+		}
+	}
+	@media screen and (min-width: 768px) {
+		display: none;
 	}
 }

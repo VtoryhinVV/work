@@ -18,9 +18,6 @@ export default function Hero() {
 					</div>
 					<Button>Become An Partner</Button>
 				</div>
-				{/* <div className={css.hero__image}>
-					<img src='/img/hero-image.png' alt='Casino art' />
-				</div> */}
 			</div>
 		</section>
 	)

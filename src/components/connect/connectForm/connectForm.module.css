@@ -1,0 +1,136 @@
+.form {
+	display: flex;
+	flex-direction: column;
+	background-color: #101112;
+	border: 1px solid #0b0b0c;
+	border-radius: 24px;
+	padding: 60px 40px;
+	gap: 24px;
+	max-width: 580px;
+	margin: 0 auto;
+	@media screen and (min-width: 1140px) {
+		margin: 0;
+	}
+}
+
+.row {
+	display: flex;
+	gap: 16px;
+}
+
+.flex1 {
+	flex: 1;
+}
+.labelText {
+	font-size: 14px;
+	color: white;
+	margin-bottom: 4px;
+}
+
+.input {
+	width: 100%;
+	border: 1px solid #1b191a;
+	font-size: 14px;
+	border-radius: 34px;
+	padding: 12px 24px;
+	background: #0b0b0c;
+	color: white;
+}
+
+.checkbox {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+}
+
+.submit {
+	margin-top: 1rem;
+	padding: 1rem;
+	border: none;
+	border-radius: 9999px;
+	background: linear-gradient(to right, #ff00cc, #3333ff);
+	color: white;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.error {
+	color: red;
+	font-size: 0.8rem;
+}
+
+.inputWrap {
+	position: relative;
+}
+
+.eye {
+	position: absolute;
+	right: 12px;
+	top: 50%;
+	transform: translateY(-50%);
+	cursor: pointer;
+	font-size: 16px;
+	user-select: none;
+}
+
+.labelWithIcon {
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+}
+
+.checkboxWrap {
+	position: relative;
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	cursor: pointer;
+	user-select: none;
+}
+
+.checkboxInput {
+	opacity: 0;
+	width: 0;
+	height: 0;
+	position: absolute;
+}
+
+.customCheckbox {
+	width: 16px;
+	height: 16px;
+	border: 1px solid #aaa;
+	border-radius: 4px;
+	position: relative;
+}
+.checkboxInput:checked + .customCheckbox {
+	background-color: #ff2ea1;
+	border: none;
+}
+.checkboxInput:checked + .customCheckbox::after {
+	content: '✔';
+	position: absolute;
+	left: 2px;
+	top: -2px;
+	font-size: 14px;
+	color: white;
+}
+
+.button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+	padding: 16px 24px;
+	color: #6b2ea1;
+	font-weight: 600;
+	background-color: white;
+	border-radius: 34px;
+	cursor: pointer;
+	transition: all 250ms ease;
+	&:focus,
+	&:hover {
+		color: white;
+		background-color: #ef97e8;
+		box-shadow: 0 0 10px #ef97e8, 0 0 20px #ef97e8;
+	}
+}
