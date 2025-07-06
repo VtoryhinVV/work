@@ -4,13 +4,13 @@
 	flex-direction: column;
 	background-image: url('/img/formBg.png');
 	background-repeat: no-repeat;
-	background-size: 50% auto;
 	background-size: cover;
 	background-position: center;
 }
 
 .container__inner {
 	display: flex;
+	flex-direction: column;
 	@media screen and (min-width: 1140px) {
 		flex-direction: row;
 		justify-content: space-between;

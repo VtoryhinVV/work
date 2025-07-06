@@ -7,7 +7,6 @@ import css from './connectForm.module.css'
 export default function ConnectForm() {
 	const [showPassword, setShowPassword] = useState(false)
 	const [showConfirm, setShowConfirm] = useState(false)
-	console.log('%cForm data:', 'color: lime; font-weight: bold;')
 	return (
 		<Formik
 			initialValues={{
