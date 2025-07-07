@@ -13,14 +13,16 @@ export default function PrivacyPolicy() {
 					<p>
 						This Privacy Policy explains why and how we collect, use, and
 						process the information you provide when using the Aff7o Affiliates
-						website (aff7oaffiliates.com) (hereinafter referred to as “the
-						Website”).
+						website (aff7o.com) (hereinafter referred to as “the Website”).
 					</p>
 					<p>
-						Any reference to “aff7oaffiliates.com,” “us,” “we,” or “our”
-						includes [xxx], a company owned and operated by [xxx]. You will be
-						required to provide your license number and address, which can be
-						copied from the product site.
+						Any reference to “aff7o.com,” “us,” “we,” or “our” includes
+						7o.casino, a company owned and operated byS ilent Signal Systems
+						Group Limited, a company incorporated under the laws of Hong Kong,
+						reg. no 78041808, having its registered office at Unit C, 8/F, King
+						Palace Plaza No. 55 King Yip Street, Kwun Tong, Kowloon, Hong Kong
+						You will be required to provide your license number and address,
+						which can be copied from the product site.
 					</p>
 					<p>
 						We securely protect your sensitive data. Any information you provide
@@ -42,6 +44,10 @@ export default function PrivacyPolicy() {
 						<b>Information We Collect on Our Website</b>
 					</p>
 					<p>
+						We may receive your personal information from various sources,
+						including:
+					</p>
+					<p>
 						a. Information you provide by filling out forms on the Website
 						<br /> This may include: first name, last name, phone number, email
 						address, messenger ID, etc. This information is provided voluntarily
@@ -57,9 +63,17 @@ export default function PrivacyPolicy() {
 						offer personalized promotions.
 					</p>
 					<p>
-						There are two types of cookies: <br /> Session cookies: Used only
-						during your visit and deleted when you leave the Website. Persistent
-						cookies: Stored on your device until deleted manually.
+						c. Cookies <br /> Cookies are small web files sent to your device
+						when you visit our Website. They do not harm your device or take up
+						storage space but help improve your access to the Website. We use
+						them to better understand how users interact with the Website and
+						improve performance accordingly.
+					</p>
+					<p>
+						There are two types of cookies: <br />
+						Session cookies: Used only during your visit and deleted when you
+						leave the Website. <br />
+						Persistent cookies: Stored on your device until deleted manually.
 					</p>
 					<p>
 						In addition to our own cookies, we use cookies from trusted
@@ -73,9 +87,9 @@ export default function PrivacyPolicy() {
 						Mountain View, California 94043, USA. See Google’s privacy policy.
 					</p>
 					<p>
-						Google Ads Address: <br /> Google Data Protection Office, 1600
-						Amphitheatre Pkwy, Mountain View, California 94043, USA. See Google
-						Ads privacy policy.
+						Google Ads Address: <br /> Address: Google Data Protection Office,
+						1600 Amphitheatre Pkwy, Mountain View, California 94043, USA. See
+						Google Ads privacy policy.
 					</p>
 					<p>
 						Consent to the Use of Cookies <br /> By continuing to use our
@@ -92,10 +106,13 @@ export default function PrivacyPolicy() {
 						to our subsidiaries (including parent companies and their
 						affiliates) when required under this Privacy Policy. We may also
 						share your data with consultants or business partners as needed for
-						risk management or legal advice. Our employees with access to your
-						data are bound by confidentiality agreements and follow data
-						protection laws. We do not sell, rent, or share your personal data
-						with third parties unless legally obligated to do so.
+						risk management or legal advice.
+					</p>
+					<p>
+						Our employees with access to your data are bound by confidentiality
+						agreements and follow data protection laws. We do not sell, rent, or
+						share your personal data with third parties unless legally obligated
+						to do so.
 					</p>
 					<p>
 						Access, Modification, and Deletion of Data <br /> You have the right
@@ -111,21 +128,23 @@ export default function PrivacyPolicy() {
 						Security <br /> We use advanced technology to protect your data from
 						unauthorized access, unlawful processing, accidental loss,
 						destruction, or damage. Our Website uses SSL encryption to ensure
-						that data you transmit cannot be intercepted by third parties. While
-						we store your data securely, you should also take protective steps,
-						such as updating your operating system, using antivirus software,
-						updating your browser, and safeguarding passwords and other
-						sensitive data.
+						that data you transmit cannot be intercepted by third parties.
+					</p>
+					<p>
+						While we store your data securely, you should also take protective
+						steps, such as updating your operating system, using antivirus
+						software, updating your browser, and safeguarding passwords and
+						other sensitive data.
 					</p>
 					<p>
 						Contact Us <br /> If you have any questions about this Privacy
 						Policy or would like to exercise your rights regarding your personal
-						data, please contact us via email at:
+						data, please contact us via email at:{' '}
 						<a
-							href='mailto:emailgoeshere@gmail.com'
+							href='mailto:affiliates@7o.casino'
 							style={{ textDecoration: 'underline' }}
 						>
-							emailgoeshere@gmail.com
+							affiliates@7o.casino
 						</a>
 					</p>
 				</section>

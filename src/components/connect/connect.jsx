@@ -10,11 +10,11 @@ export default function Connect() {
 						<h2>Connect with Us</h2>
 						<p>Talk To Us Anytime</p>
 						<div className={css.contact__links}>
-							<a href='#'>
+							<a href='mailto:affiliates@7o.casino'>
 								<img src='/envelope.svg' alt='envelope icon' />
 								emailgoeshere@gmail.com
 							</a>
-							<a href='#'>
+							<a href='https://t.me/aff_7oasis'>
 								<img src='/comments.svg' alt='comments icon' />
 								Telegram
 							</a>

@@ -25,7 +25,12 @@ export default function Header() {
 					</Link>
 					<div className={css.header___mainBtn}>{navLinks}</div>
 					<div className={css.header___reg_nav}>
-						<a href='https://admin.aff7o.com/partner/login'>Log in</a>
+						<a
+							href='https://admin.aff7o.com/partner/login'
+							className={css.header___btnLog}
+						>
+							Log in
+						</a>
 						<a
 							className={css.header___regBtn}
 							href='https://admin.aff7o.com/partner/register'
@@ -36,8 +41,16 @@ export default function Header() {
 					<BurgerButton>
 						<div className={css.header___mainBtnMob}>{navLinks}</div>
 						<div className={css.header___regBtnMob}>
-							<a href='https://admin.aff7o.com/partner/login'>Log in</a>
-							<a href='https://admin.aff7o.com/partner/register'>
+							<a
+								href='https://admin.aff7o.com/partner/login'
+								className={css.header___btnLog}
+							>
+								Log in
+							</a>
+							<a
+								href='https://admin.aff7o.com/partner/register'
+								className={css.header___regBtn}
+							>
 								Become an Partner
 							</a>
 						</div>

@@ -14,6 +14,10 @@
 	border: none;
 	cursor: pointer;
 	padding: 0;
+	&:hover .line,
+	&:focus .line {
+		background: #6b2ea1;
+	}
 }
 
 .line {
