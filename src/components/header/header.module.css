@@ -67,7 +67,7 @@
 	border-radius: 34px;
 	padding: 8px 16px;
 	font-weight: 600;
-	transition: all 500ms linear;
+	transition: all 250ms linear;
 	color: white;
 	&:hover,
 	&:focus {
