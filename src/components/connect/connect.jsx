@@ -12,7 +12,7 @@ export default function Connect() {
 						<div className={css.contact__links}>
 							<a href='mailto:affiliates@7o.casino'>
 								<img src='/envelope.svg' alt='envelope icon' />
-								emailgoeshere@gmail.com
+								affiliates@7o.casino
 							</a>
 							<a href='https://t.me/aff_7oasis'>
 								<img src='/comments.svg' alt='comments icon' />
