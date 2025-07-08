@@ -39,9 +39,12 @@ export default function ConnectForm() {
 			})}
 			onSubmit={async (values, { resetForm }) => {
 				try {
-					const response = await axios.post('/api/api/client/partner', {
-						partner_user: values,
-					})
+					const response = await axios.post(
+						'https://admin.aff7o.com/api/client/partner',
+						{
+							partner_user: values,
+						}
+					)
 
 					if (response.status === 200 || response.status === 201) {
 						toast.success(
