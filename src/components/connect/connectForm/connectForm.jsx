@@ -1,5 +1,8 @@
+import axios from 'axios'
 import { ErrorMessage, Field, Form, Formik } from 'formik'
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
+import { toast } from 'react-toastify'
 import * as Yup from 'yup'
 import Icon from '../../../assets/play.svg?react'
 import css from './connectForm.module.css'
@@ -10,30 +13,54 @@ export default function ConnectForm() {
 	return (
 		<Formik
 			initialValues={{
-				fullName: '',
-				companyName: '',
+				full_name: '',
+				company_name: '',
 				phone: '',
 				email: '',
-				messenger: '',
+				address: '',
 				password: '',
-				confirmPassword: '',
-				acceptTerms: false,
+				password_confirmation: '',
+				terms_accepted: false,
 			}}
-			validate={() => ({})}
 			validationSchema={Yup.object({
-				fullName: Yup.string().required('Required'),
-				companyName: Yup.string().required('Required'),
+				full_name: Yup.string().required('Required'),
+				company_name: Yup.string().required('Required'),
 				phone: Yup.string().required('Required'),
 				email: Yup.string().email('Invalid email').required('Required'),
+				address: Yup.string().required('Required'),
 				password: Yup.string().min(6).required('Required'),
-				confirmPassword: Yup.string()
+				password_confirmation: Yup.string()
 					.oneOf([Yup.ref('password')], 'Passwords must match')
 					.required('Required'),
-				acceptTerms: Yup.boolean().oneOf([true], 'You must accept the terms'),
+				terms_accepted: Yup.boolean().oneOf(
+					[true],
+					'You must accept the terms'
+				),
 			})}
-			onSubmit={values => {
-				console.log('Form data', values)
-				alert(JSON.stringify(values, null, 2))
+			onSubmit={async (values, { resetForm }) => {
+				try {
+					const response = await axios.post('/api/api/client/partner', {
+						partner_user: values,
+					})
+
+					if (response.status === 200 || response.status === 201) {
+						toast.success(
+							<>
+								Registration was successful!
+								<br />
+								We will let you know when we approve your account.
+							</>
+						)
+						resetForm()
+					} else {
+						toast.error('Something went wrong. Try again later.')
+					}
+				} catch (error) {
+					const message =
+						error.response?.data?.message ||
+						'Error sending data. Try again later.'
+					toast.error(message)
+				}
 			}}
 		>
 			{() => (
@@ -42,12 +69,12 @@ export default function ConnectForm() {
 						<label className={css.flex1}>
 							<span className={css.labelText}>Full Name *</span>
 							<Field
-								name='fullName'
+								name='full_name'
 								placeholder='Enter name'
 								className={css.input}
 							/>
 							<ErrorMessage
-								name='fullName'
+								name='full_name'
 								component='div'
 								className={css.error}
 							/>
@@ -55,12 +82,12 @@ export default function ConnectForm() {
 						<label className={css.flex1}>
 							<span className={css.labelText}>Company Name *</span>
 							<Field
-								name='companyName'
+								name='company_name'
 								placeholder='Enter company name'
 								className={css.input}
 							/>
 							<ErrorMessage
-								name='companyName'
+								name='company_name'
 								component='div'
 								className={css.error}
 							/>
@@ -97,10 +124,10 @@ export default function ConnectForm() {
 					</div>
 
 					<label className={css.labelWithIcon}>
-						<span className={css.labelText}>Messenger</span>
+						<span className={css.labelText}>Address *</span>
 						<Field
-							name='messenger'
-							placeholder='Enter messenger'
+							name='address'
+							placeholder='Enter address'
 							className={css.input}
 						/>
 					</label>
@@ -145,7 +172,7 @@ export default function ConnectForm() {
 						<span className={css.labelText}>Confirm Password *</span>
 						<div className={css.inputWrap}>
 							<Field
-								name='confirmPassword'
+								name='password_confirmation'
 								type={showConfirm ? 'text' : 'password'}
 								placeholder='Enter password'
 								className={css.input}
@@ -172,7 +199,7 @@ export default function ConnectForm() {
 							</span>
 						</div>
 						<ErrorMessage
-							name='confirmPassword'
+							name='password_confirmation'
 							component='div'
 							className={css.error}
 						/>
@@ -181,14 +208,19 @@ export default function ConnectForm() {
 						<label className={css.checkboxWrap}>
 							<Field
 								type='checkbox'
-								name='acceptTerms'
+								name='terms_accepted'
 								className={css.checkboxInput}
 							/>
-							<span className={css.customCheckbox}></span>I accept the Terms and
-							Conditions
+							<span className={css.customCheckbox}></span>I accept the{' '}
+							<Link
+								to='/terms_and_conditions'
+								style={{ textDecoration: 'underline' }}
+							>
+								Terms &amp; Conditions
+							</Link>
 						</label>
 						<ErrorMessage
-							name='acceptTerms'
+							name='terms_accepted'
 							component='div'
 							className={css.error}
 						/>
