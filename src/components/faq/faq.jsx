@@ -31,7 +31,9 @@ export default function FAQ() {
 						<FaqAccordion key={index} item={item} />
 					))}
 				</ul>
-				<Button icon>Still Have questions?</Button>
+				<Button icon link='https://t.me/aff_7oasis'>
+					Still Have questions?
+				</Button>
 			</div>
 		</section>
 	)
